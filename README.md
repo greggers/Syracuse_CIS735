@@ -26,6 +26,25 @@ After taking this course, students will be able to:
 - Non-parametric density estimation
 - Semi-parametric density estimation with mixture models
 
+### [Lecture 3: Distance Measures](./Lecture_3_Distance_Measures)
+- Euclidean, Manhattan, and Minkowski distances
+- Mahalanobis distance for correlated features
+- Cosine similarity for text and high-dimensional data
+- Jaccard similarity for sets
+- Hamming distance for binary vectors
+- Edit distance for strings
+- Applications of distance metrics in machine learning algorithms
+
+### [Lecture 4: Features and Dimensionality](./Lecture_4_Features_and_Dimensionality)
+- The curse of dimensionality and its implications for machine learning
+- Feature extraction and selection techniques
+- Dimensionality reduction methods:
+  - Principal Component Analysis (PCA) for unsupervised dimensionality reduction
+  - Linear Discriminant Analysis (LDA) for supervised dimensionality reduction
+  - Autoencoders for non-linear dimensionality reduction and feature learning
+- Visualization of high-dimensional data
+- Impact of dimensionality on model performance and computational efficiency
+
 ## Course Schedule
 
 | Week | Topic |
@@ -52,7 +71,7 @@ git clone https://github.com/greggers/Syracuse_CIS735.git
 
 2. Install the required dependencies:
 ```bash
-pip install numpy scipy matplotlib scikit-learn
+pip install numpy scipy matplotlib scikit-learn torch torchvision
 ```
 
 3. Navigate to specific lecture directories to run examples.
@@ -66,5 +85,3 @@ Students and the public are encouraged to contribute to this repository by submi
 For questions or further information about the course, please contact the course instructor.
 
 ---
-
-www.gregorymwagner.com
