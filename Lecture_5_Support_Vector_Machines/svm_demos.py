@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import svm
-from sklearn.datasets import make_blobs
+from sklearn.datasets import make_blobs, make_moons
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
@@ -226,7 +226,6 @@ def rbf_kernel_demo():
     np.random.seed(42)
     
     # Create a moon-shaped dataset
-    from sklearn.datasets import make_moons
     X, y = make_moons(n_samples=n_samples, noise=0.15, random_state=42)
     
     # Scale the data to make visualization clearer
