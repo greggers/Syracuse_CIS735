@@ -1,0 +1,23 @@
+2025-06-01 15:14:14,770 - INFO - Starting Honeypot Services...
+2025-06-01 15:14:14,774 - INFO - SSH Honeypot listening on localhost:2222
+2025-06-01 15:14:14,793 - INFO - All honeypot services started!
+2025-06-01 15:14:18,569 - INFO - Web Honeypot listening on localhost:8080
+2025-06-01 15:14:21,577 - INFO - Attack logged: {'timestamp': '2025-06-01T15:14:21.577651', 'source_ip': '127.0.0.1', 'service': 'SSH_Shell', 'command': 'password:password', 'directory': '/home/admin'}
+2025-06-01 15:14:22,578 - INFO - Attack logged: {'timestamp': '2025-06-01T15:14:22.578639', 'source_ip': '127.0.0.1', 'service': 'SSH_Shell', 'command': 'password:123456', 'directory': '/home/admin'}
+2025-06-01 15:14:23,579 - INFO - Attack logged: {'timestamp': '2025-06-01T15:14:20.575767', 'source_ip': '127.0.0.1', 'source_port': 38050, 'service': 'SSH', 'attack_type': 'Connection Attempt', 'data': 'password:admin\n', 'auth_attempt': 1}
+2025-06-01 15:14:23,583 - INFO - Attack logged: {'timestamp': '2025-06-01T15:14:23.583213', 'source_ip': '127.0.0.1', 'service': 'HTTP', 'request': "GET /?id=1' UNION SELECT * FROM users-- HTTP/1.1\r", 'detected_attacks': ['sql_injection']}
+2025-06-01 15:14:24,589 - INFO - Attack logged: {'timestamp': '2025-06-01T15:14:24.589183', 'source_ip': '127.0.0.1', 'service': 'HTTP', 'request': 'GET /files?file=../../../etc/passwd HTTP/1.1\r', 'detected_attacks': ['directory_traversal']}
+2025-06-01 15:14:25,597 - INFO - Attack logged: {'timestamp': '2025-06-01T15:14:25.596639', 'source_ip': '127.0.0.1', 'service': 'HTTP', 'request': "GET /search?q=<script>alert('XSS')</script> HTTP/1.1\r", 'detected_attacks': ['sql_injection', 'xss']}
+2025-06-01 15:14:36,608 - INFO - Stopping honeypot services...
+2025-06-01 15:15:22,157 - INFO - Starting Honeypot Services...
+2025-06-01 15:15:22,167 - INFO - SSH Honeypot listening on localhost:2222
+2025-06-01 15:15:22,168 - INFO - Web Honeypot listening on localhost:8080
+2025-06-01 15:15:22,178 - INFO - All honeypot services started!
+2025-06-01 15:15:52,316 - INFO - Attack logged: {'timestamp': '2025-06-01T15:15:52.316139', 'source_ip': '127.0.0.1', 'service': 'SSH_Shell', 'command': 'password:password', 'directory': '/home/admin'}
+2025-06-01 15:15:53,318 - INFO - Attack logged: {'timestamp': '2025-06-01T15:15:53.318816', 'source_ip': '127.0.0.1', 'service': 'SSH_Shell', 'command': 'password:123456', 'directory': '/home/admin'}
+2025-06-01 15:15:57,199 - INFO - Attack logged: {'timestamp': '2025-06-01T15:15:42.030556', 'source_ip': '127.0.0.1', 'source_port': 42906, 'service': 'SSH', 'attack_type': 'Connection Attempt', 'data': 'password:admin\n', 'auth_attempt': 1}
+2025-06-01 15:16:12,307 - INFO - Attack logged: {'timestamp': '2025-06-01T15:16:12.306812', 'source_ip': '127.0.0.1', 'service': 'HTTP', 'request': "GET /?id=1' UNION SELECT * FROM users-- HTTP/1.1\r", 'detected_attacks': ['sql_injection']}
+2025-06-01 15:16:13,314 - INFO - Attack logged: {'timestamp': '2025-06-01T15:16:13.313488', 'source_ip': '127.0.0.1', 'service': 'HTTP', 'request': 'GET /files?file=../../../etc/passwd HTTP/1.1\r', 'detected_attacks': ['directory_traversal']}
+2025-06-01 15:16:14,319 - INFO - Attack logged: {'timestamp': '2025-06-01T15:16:14.318871', 'source_ip': '127.0.0.1', 'service': 'HTTP', 'request': "GET /search?q=<script>alert('XSS')</script> HTTP/1.1\r", 'detected_attacks': ['sql_injection', 'xss']}
+2025-06-01 15:16:22,328 - WARNING - ALERT: High activity from IP 127.0.0.1: 6 attempts
+2025-06-01 15:16:25,331 - INFO - Stopping honeypot services...

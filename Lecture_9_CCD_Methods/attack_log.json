@@ -1,0 +1,53 @@
+[
+  {
+    "timestamp": "2025-06-01T15:15:52.316139",
+    "source_ip": "127.0.0.1",
+    "service": "SSH_Shell",
+    "command": "password:password",
+    "directory": "/home/admin"
+  },
+  {
+    "timestamp": "2025-06-01T15:15:53.318816",
+    "source_ip": "127.0.0.1",
+    "service": "SSH_Shell",
+    "command": "password:123456",
+    "directory": "/home/admin"
+  },
+  {
+    "timestamp": "2025-06-01T15:15:42.030556",
+    "source_ip": "127.0.0.1",
+    "source_port": 42906,
+    "service": "SSH",
+    "attack_type": "Connection Attempt",
+    "data": "password:admin\n",
+    "auth_attempt": 1
+  },
+  {
+    "timestamp": "2025-06-01T15:16:12.306812",
+    "source_ip": "127.0.0.1",
+    "service": "HTTP",
+    "request": "GET /?id=1' UNION SELECT * FROM users-- HTTP/1.1\r",
+    "detected_attacks": [
+      "sql_injection"
+    ]
+  },
+  {
+    "timestamp": "2025-06-01T15:16:13.313488",
+    "source_ip": "127.0.0.1",
+    "service": "HTTP",
+    "request": "GET /files?file=../../../etc/passwd HTTP/1.1\r",
+    "detected_attacks": [
+      "directory_traversal"
+    ]
+  },
+  {
+    "timestamp": "2025-06-01T15:16:14.318871",
+    "source_ip": "127.0.0.1",
+    "service": "HTTP",
+    "request": "GET /search?q=<script>alert('XSS')</script> HTTP/1.1\r",
+    "detected_attacks": [
+      "sql_injection",
+      "xss"
+    ]
+  }
+]
