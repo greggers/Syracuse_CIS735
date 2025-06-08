@@ -1,0 +1,385 @@
+{
+  "report_generated": "2025-06-08T12:30:03.156212",
+  "summary": {
+    "total_predictions": 4,
+    "avg_financial_impact": 3.492526907215261,
+    "avg_success_probability": 0.004123084586277485,
+    "risk_distribution": {
+      "low": "4"
+    }
+  },
+  "digital_thread": [
+    {
+      "event_id": "72b35e5c-0cc5-414a-ae19-8921c1e09086",
+      "timestamp": "2025-06-08T12:29:59.346831",
+      "event_type": "threat_data_preparation",
+      "details": {
+        "total_scenarios": 2000,
+        "threat_types": [
+          "insider_threat",
+          "apt",
+          "ddos",
+          "phishing",
+          "malware"
+        ],
+        "target_systems": [
+          "cloud_service",
+          "network_device",
+          "workstation",
+          "web_server",
+          "database"
+        ],
+        "avg_financial_impact": 2.000576101510753,
+        "avg_success_probability": 0.196552900425037
+      },
+      "prediction_info": {}
+    },
+    {
+      "event_id": "a0190e2c-9d73-40a2-830a-76a662d3a4af",
+      "timestamp": "2025-06-08T12:29:59.368713",
+      "event_type": "feature_preprocessing",
+      "details": {
+        "categorical_encoding": "label_encoding",
+        "numerical_scaling": "standard_scaling",
+        "total_features": 11
+      },
+      "prediction_info": {}
+    },
+    {
+      "event_id": "f9fb6927-ad33-4bc4-adb0-4a8440b6b51f",
+      "timestamp": "2025-06-08T12:29:59.951537",
+      "event_type": "financial_impact_model_training",
+      "details": {
+        "algorithm": "RandomForestRegressor",
+        "n_estimators": 100,
+        "training_samples": 1600,
+        "test_mse": 0.5685648225551508,
+        "feature_importance": {
+          "threat_type_encoded": 0.22370269921519967,
+          "target_system_encoded": 0.15228725754553743,
+          "attack_vector_encoded": 0.011683901457610675,
+          "sophistication": 0.40617688966403587,
+          "security_maturity": 0.025181862898146782,
+          "employee_training": 0.03574259117892861,
+          "patch_level": 0.02986779659309505,
+          "network_segmentation": 0.028986272918217922,
+          "business_hours": 0.03345126814324586,
+          "weekend": 0.022331953056376204,
+          "holiday": 0.030587507329605995
+        }
+      },
+      "prediction_info": {
+        "target_variable": "financial_impact",
+        "model_type": "regression"
+      }
+    },
+    {
+      "event_id": "491f285d-17d4-42ab-8f65-fc2f761a8b0c",
+      "timestamp": "2025-06-08T12:30:00.239261",
+      "event_type": "success_probability_model_training",
+      "details": {
+        "algorithm": "GradientBoostingClassifier",
+        "n_estimators": 100,
+        "training_samples": 1600,
+        "test_accuracy": 0.9525,
+        "feature_importance": {
+          "threat_type_encoded": 0.011019459545575844,
+          "target_system_encoded": 0.007020455692124867,
+          "attack_vector_encoded": 0.007816356480812409,
+          "sophistication": 0.4110625913770281,
+          "security_maturity": 0.10254519718419623,
+          "employee_training": 0.15600090486304083,
+          "patch_level": 0.14655468766892754,
+          "network_segmentation": 0.14498145705332208,
+          "business_hours": 0.0036540973151107615,
+          "weekend": 0.007716554993944638,
+          "holiday": 0.0016282378259167595
+        }
+      },
+      "prediction_info": {
+        "target_variable": "success_probability",
+        "model_type": "classification"
+      }
+    },
+    {
+      "event_id": "5c5402f6-70bb-4369-ba38-c9140df9ce4f",
+      "timestamp": "2025-06-08T12:30:00.258647",
+      "event_type": "threat_behavior_prediction",
+      "details": {
+        "threat_type": "apt",
+        "target_system": "database",
+        "predicted_financial_impact": 8.879208084642197,
+        "predicted_success_probability": 0.009683968760758676,
+        "risk_level": "low"
+      },
+      "prediction_info": {
+        "models_used": [
+          "financial_impact_model",
+          "success_probability_model"
+        ],
+        "confidence_score": 0.6546525717673872
+      }
+    },
+    {
+      "event_id": "539b02cb-7f9c-40af-9265-c01038cf3649",
+      "timestamp": "2025-06-08T12:30:00.277630",
+      "event_type": "threat_behavior_prediction",
+      "details": {
+        "threat_type": "ddos",
+        "target_system": "web_server",
+        "predicted_financial_impact": 1.9733203253412008,
+        "predicted_success_probability": 0.0010547769756742735,
+        "risk_level": "low"
+      },
+      "prediction_info": {
+        "models_used": [
+          "financial_impact_model",
+          "success_probability_model"
+        ],
+        "confidence_score": 0.7651376804363321
+      }
+    },
+    {
+      "event_id": "54b4e6dc-e946-4d63-af04-b7412d843e1f",
+      "timestamp": "2025-06-08T12:30:00.296128",
+      "event_type": "threat_behavior_prediction",
+      "details": {
+        "threat_type": "phishing",
+        "target_system": "workstation",
+        "predicted_financial_impact": 0.7969566470825094,
+        "predicted_success_probability": 0.0036233059207070335,
+        "risk_level": "low"
+      },
+      "prediction_info": {
+        "models_used": [
+          "financial_impact_model",
+          "success_probability_model"
+        ],
+        "confidence_score": 0.8200855062499846
+      }
+    },
+    {
+      "event_id": "3472d02f-3cc6-4d8d-b6f7-aa8863fe45ec",
+      "timestamp": "2025-06-08T12:30:00.313949",
+      "event_type": "threat_behavior_prediction",
+      "details": {
+        "threat_type": "insider_threat",
+        "target_system": "cloud_service",
+        "predicted_financial_impact": 2.320622571795136,
+        "predicted_success_probability": 0.002130286687969956,
+        "risk_level": "low"
+      },
+      "prediction_info": {
+        "models_used": [
+          "financial_impact_model",
+          "success_probability_model"
+        ],
+        "confidence_score": 0.7409195022802193
+      }
+    },
+    {
+      "event_id": "658bc481-8142-499a-8749-80f4eca133b7",
+      "timestamp": "2025-06-08T12:30:00.314025",
+      "event_type": "batch_threat_prediction",
+      "details": {
+        "scenarios_processed": 4,
+        "avg_predicted_impact": 3.492526907215261,
+        "avg_success_probability": 0.004123084586277485,
+        "high_risk_scenarios": 0
+      },
+      "prediction_info": {}
+    }
+  ],
+  "predictions": [
+    {
+      "scenario_id": "ba716c95-5d2d-4fb6-a7a1-a294993f9626",
+      "timestamp": "2025-06-08T12:30:00.250048",
+      "input_scenario": {
+        "threat_type": "apt",
+        "target_system": "database",
+        "attack_vector": "email",
+        "sophistication": 9,
+        "security_maturity": 6.0,
+        "employee_training": 5.0,
+        "patch_level": 7.0,
+        "network_segmentation": 8.0,
+        "business_hours": 1,
+        "weekend": 0,
+        "holiday": 0
+      },
+      "predicted_financial_impact": 8.879208084642197,
+      "predicted_success_probability": 0.009683968760758676,
+      "expected_impact": 0.08598597371195092,
+      "risk_level": "low",
+      "confidence_score": 0.6546525717673872
+    },
+    {
+      "scenario_id": "8bf9ed0e-5d75-4d6a-98a2-3d2e839393b9",
+      "timestamp": "2025-06-08T12:30:00.269274",
+      "input_scenario": {
+        "threat_type": "ddos",
+        "target_system": "web_server",
+        "attack_vector": "network",
+        "sophistication": 6,
+        "security_maturity": 8.0,
+        "employee_training": 7.0,
+        "patch_level": 9.0,
+        "network_segmentation": 6.0,
+        "business_hours": 1,
+        "weekend": 0,
+        "holiday": 0
+      },
+      "predicted_financial_impact": 1.9733203253412008,
+      "predicted_success_probability": 0.0010547769756742735,
+      "expected_impact": 0.002081412844799965,
+      "risk_level": "low",
+      "confidence_score": 0.7651376804363321
+    },
+    {
+      "scenario_id": "0ee2a1d2-28b9-4e38-9ab7-bb571de85793",
+      "timestamp": "2025-06-08T12:30:00.288233",
+      "input_scenario": {
+        "threat_type": "phishing",
+        "target_system": "workstation",
+        "attack_vector": "email",
+        "sophistication": 4,
+        "security_maturity": 4.0,
+        "employee_training": 3.0,
+        "patch_level": 5.0,
+        "network_segmentation": 4.0,
+        "business_hours": 1,
+        "weekend": 0,
+        "holiday": 0
+      },
+      "predicted_financial_impact": 0.7969566470825094,
+      "predicted_success_probability": 0.0036233059207070335,
+      "expected_impact": 0.002887617737920882,
+      "risk_level": "low",
+      "confidence_score": 0.8200855062499846
+    },
+    {
+      "scenario_id": "7f6152e0-a274-4048-a2b7-026a7152b1df",
+      "timestamp": "2025-06-08T12:30:00.306283",
+      "input_scenario": {
+        "threat_type": "insider_threat",
+        "target_system": "cloud_service",
+        "attack_vector": "social_engineering",
+        "sophistication": 7,
+        "security_maturity": 7.0,
+        "employee_training": 6.0,
+        "patch_level": 8.0,
+        "network_segmentation": 5.0,
+        "business_hours": 0,
+        "weekend": 1,
+        "holiday": 0
+      },
+      "predicted_financial_impact": 2.320622571795136,
+      "predicted_success_probability": 0.002130286687969956,
+      "expected_impact": 0.0049435913724977815,
+      "risk_level": "low",
+      "confidence_score": 0.7409195022802193
+    }
+  ],
+  "model_lineage": [
+    {
+      "timestamp": "2025-06-08T12:29:59.951537",
+      "event_type": "financial_impact_model_training",
+      "details": {
+        "algorithm": "RandomForestRegressor",
+        "n_estimators": 100,
+        "training_samples": 1600,
+        "test_mse": 0.5685648225551508,
+        "feature_importance": {
+          "threat_type_encoded": 0.22370269921519967,
+          "target_system_encoded": 0.15228725754553743,
+          "attack_vector_encoded": 0.011683901457610675,
+          "sophistication": 0.40617688966403587,
+          "security_maturity": 0.025181862898146782,
+          "employee_training": 0.03574259117892861,
+          "patch_level": 0.02986779659309505,
+          "network_segmentation": 0.028986272918217922,
+          "business_hours": 0.03345126814324586,
+          "weekend": 0.022331953056376204,
+          "holiday": 0.030587507329605995
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-08T12:30:00.239261",
+      "event_type": "success_probability_model_training",
+      "details": {
+        "algorithm": "GradientBoostingClassifier",
+        "n_estimators": 100,
+        "training_samples": 1600,
+        "test_accuracy": 0.9525,
+        "feature_importance": {
+          "threat_type_encoded": 0.011019459545575844,
+          "target_system_encoded": 0.007020455692124867,
+          "attack_vector_encoded": 0.007816356480812409,
+          "sophistication": 0.4110625913770281,
+          "security_maturity": 0.10254519718419623,
+          "employee_training": 0.15600090486304083,
+          "patch_level": 0.14655468766892754,
+          "network_segmentation": 0.14498145705332208,
+          "business_hours": 0.0036540973151107615,
+          "weekend": 0.007716554993944638,
+          "holiday": 0.0016282378259167595
+        }
+      }
+    },
+    {
+      "timestamp": "2025-06-08T12:30:00.258647",
+      "event_type": "threat_behavior_prediction",
+      "details": {
+        "threat_type": "apt",
+        "target_system": "database",
+        "predicted_financial_impact": 8.879208084642197,
+        "predicted_success_probability": 0.009683968760758676,
+        "risk_level": "low"
+      }
+    },
+    {
+      "timestamp": "2025-06-08T12:30:00.277630",
+      "event_type": "threat_behavior_prediction",
+      "details": {
+        "threat_type": "ddos",
+        "target_system": "web_server",
+        "predicted_financial_impact": 1.9733203253412008,
+        "predicted_success_probability": 0.0010547769756742735,
+        "risk_level": "low"
+      }
+    },
+    {
+      "timestamp": "2025-06-08T12:30:00.296128",
+      "event_type": "threat_behavior_prediction",
+      "details": {
+        "threat_type": "phishing",
+        "target_system": "workstation",
+        "predicted_financial_impact": 0.7969566470825094,
+        "predicted_success_probability": 0.0036233059207070335,
+        "risk_level": "low"
+      }
+    },
+    {
+      "timestamp": "2025-06-08T12:30:00.313949",
+      "event_type": "threat_behavior_prediction",
+      "details": {
+        "threat_type": "insider_threat",
+        "target_system": "cloud_service",
+        "predicted_financial_impact": 2.320622571795136,
+        "predicted_success_probability": 0.002130286687969956,
+        "risk_level": "low"
+      }
+    },
+    {
+      "timestamp": "2025-06-08T12:30:00.314025",
+      "event_type": "batch_threat_prediction",
+      "details": {
+        "scenarios_processed": 4,
+        "avg_predicted_impact": 3.492526907215261,
+        "avg_success_probability": 0.004123084586277485,
+        "high_risk_scenarios": 0
+      }
+    }
+  ]
+}

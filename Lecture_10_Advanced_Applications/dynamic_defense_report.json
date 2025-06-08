@@ -1,0 +1,5924 @@
+{
+  "report_generated": "2025-06-08T12:57:38.137175",
+  "summary": {
+    "total_defense_actions": 33,
+    "total_thread_events": 38,
+    "current_system_state": {
+      "threat_level": "medium",
+      "active_defenses": [
+        "enhanced_monitoring",
+        "network_isolation",
+        "emergency_response"
+      ],
+      "blocked_ips": "set()",
+      "quarantined_files": "set()",
+      "network_restrictions": {
+        "192.168.22.31": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:55:47.988561"
+        },
+        "192.168.202.168": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:55:48.137444"
+        },
+        "192.168.253.95": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:55:53.895615"
+        },
+        "192.168.190.108": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:55:56.096390"
+        },
+        "192.168.31.198": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:55:57.086320"
+        },
+        "192.168.219.190": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:00.318085"
+        },
+        "192.168.227.7": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:01.251814"
+        },
+        "192.168.191.174": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:02.432840"
+        },
+        "192.168.31.61": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:02.713940"
+        },
+        "192.168.136.162": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:07.867544"
+        },
+        "192.168.252.188": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:08.291121"
+        },
+        "192.168.220.140": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:13.683668"
+        },
+        "192.168.125.109": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:14.934975"
+        },
+        "192.168.109.24": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:15.251544"
+        },
+        "192.168.237.210": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:16.538819"
+        },
+        "192.168.178.29": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:21.070503"
+        },
+        "192.168.185.178": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:28.136514"
+        },
+        "192.168.214.32": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:32.456660"
+        },
+        "192.168.165.113": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:35.153039"
+        },
+        "192.168.26.113": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:36.492854"
+        },
+        "192.168.183.15": {
+          "rate_limit": true,
+          "max_connections": 10,
+          "timestamp": "2025-06-08T12:56:39.801072"
+        }
+      }
+    },
+    "defense_effectiveness": {
+      "total_defense_actions": 33,
+      "severity_distribution": {
+        "low": 12,
+        "medium": 12,
+        "high": 7,
+        "critical": 2
+      },
+      "action_effectiveness": {
+        "log_event": {
+          "count": 33,
+          "avg_confidence": 0.4172727272727272
+        },
+        "rate_limit": {
+          "count": 21,
+          "avg_confidence": 0.4276190476190476
+        },
+        "enhanced_monitoring": {
+          "count": 21,
+          "avg_confidence": 0.4276190476190476
+        },
+        "network_isolation": {
+          "count": 2,
+          "avg_confidence": 0.38
+        },
+        "emergency_response": {
+          "count": 2,
+          "avg_confidence": 0.38
+        }
+      },
+      "blocked_ips_count": 0,
+      "active_defenses": 3,
+      "current_threat_level": "medium"
+    }
+  },
+  "digital_thread": [
+    {
+      "event_id": "c05d6f18-8074-46ef-8329-5bbaad0e8035",
+      "timestamp": "2025-06-08T12:55:41.793641",
+      "event_type": "threat_classification_training_start",
+      "details": {
+        "training_samples": 1000,
+        "threat_types": [
+          "brute_force",
+          "malware",
+          "phishing",
+          "ddos",
+          "data_exfiltration"
+        ],
+        "severity_distribution": {
+          "high": 339,
+          "medium": 249,
+          "low": 229,
+          "critical": 183
+        }
+      },
+      "defense_info": {},
+      "system_state_snapshot": {
+        "threat_level": "low",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "e1cde021-2974-4b5e-8762-658030f058a1",
+      "timestamp": "2025-06-08T12:55:42.064540",
+      "event_type": "threat_classification_training_complete",
+      "details": {
+        "model_accuracy": 1.0,
+        "feature_importance": {
+          "target_port": 0.10066459399872123,
+          "payload_size": 0.24806920147231437,
+          "connection_count": 0.1858060616974061,
+          "is_encrypted": 0.03032217115787221,
+          "geolocation_risk": 0.21860879125323385,
+          "reputation_score": 0.2165291804204523
+        },
+        "model_classes": [
+          "critical",
+          "high",
+          "low",
+          "medium"
+        ]
+      },
+      "defense_info": {
+        "model_type": "threat_classification",
+        "algorithm": "RandomForestClassifier"
+      },
+      "system_state_snapshot": {
+        "threat_level": "low",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "46c872f4-8b40-44e4-a9f6-6c70335bc6ab",
+      "timestamp": "2025-06-08T12:55:42.064603",
+      "event_type": "defense_policies_initialized",
+      "details": {
+        "policy_levels": [
+          "low",
+          "medium",
+          "high",
+          "critical"
+        ],
+        "total_defense_actions": 6
+      },
+      "defense_info": {},
+      "system_state_snapshot": {
+        "threat_level": "low",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "39513796-0e4c-4fde-be76-8e51de3f0059",
+      "timestamp": "2025-06-08T12:55:42.811988",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0001",
+        "threat_type": "brute_force",
+        "assessed_severity": "low",
+        "confidence": 0.38,
+        "actions_taken": [
+          "log_event"
+        ],
+        "response_time": 30
+      },
+      "defense_info": {
+        "policy_applied": "low",
+        "total_actions": 1,
+        "system_threat_level": "low"
+      },
+      "system_state_snapshot": {
+        "threat_level": "low",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "f3bdcc99-76a7-44b1-899b-c8989495da63",
+      "timestamp": "2025-06-08T12:55:42.891837",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0002",
+        "threat_type": "ddos",
+        "assessed_severity": "low",
+        "confidence": 0.4,
+        "actions_taken": [
+          "log_event"
+        ],
+        "response_time": 30
+      },
+      "defense_info": {
+        "policy_applied": "low",
+        "total_actions": 1,
+        "system_threat_level": "low"
+      },
+      "system_state_snapshot": {
+        "threat_level": "low",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "e6c37d4d-551c-4f37-8e8e-66efb190ccfe",
+      "timestamp": "2025-06-08T12:55:45.032323",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0003",
+        "threat_type": "phishing",
+        "assessed_severity": "low",
+        "confidence": 0.38,
+        "actions_taken": [
+          "log_event"
+        ],
+        "response_time": 30
+      },
+      "defense_info": {
+        "policy_applied": "low",
+        "total_actions": 1,
+        "system_threat_level": "low"
+      },
+      "system_state_snapshot": {
+        "threat_level": "low",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "e12fb53a-cd9d-43fa-9602-c22fee467eba",
+      "timestamp": "2025-06-08T12:55:46.047229",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0004",
+        "threat_type": "malware",
+        "assessed_severity": "low",
+        "confidence": 0.3,
+        "actions_taken": [
+          "log_event"
+        ],
+        "response_time": 30
+      },
+      "defense_info": {
+        "policy_applied": "low",
+        "total_actions": 1,
+        "system_threat_level": "low"
+      },
+      "system_state_snapshot": {
+        "threat_level": "low",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "c58c2c01-2c3f-45e3-b451-7d9e823af475",
+      "timestamp": "2025-06-08T12:55:47.988619",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0005",
+        "threat_type": "malware",
+        "assessed_severity": "medium",
+        "confidence": 0.38,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 15
+      },
+      "defense_info": {
+        "policy_applied": "medium",
+        "total_actions": 3,
+        "system_threat_level": "low"
+      },
+      "system_state_snapshot": {
+        "threat_level": "low",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "fe14b236-9ed7-4416-954a-5ca5ca3f587a",
+      "timestamp": "2025-06-08T12:55:48.137504",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0006",
+        "threat_type": "brute_force",
+        "assessed_severity": "high",
+        "confidence": 0.42,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 5
+      },
+      "defense_info": {
+        "policy_applied": "high",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "e5e9c275-c6cb-4d37-889d-45f54d6033ba",
+      "timestamp": "2025-06-08T12:55:53.895671",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0007",
+        "threat_type": "phishing",
+        "assessed_severity": "medium",
+        "confidence": 0.41,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 15
+      },
+      "defense_info": {
+        "policy_applied": "medium",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "0b465e5a-ba2f-4870-8781-fe14346a5680",
+      "timestamp": "2025-06-08T12:55:56.096445",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0008",
+        "threat_type": "malware",
+        "assessed_severity": "medium",
+        "confidence": 0.45,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 15
+      },
+      "defense_info": {
+        "policy_applied": "medium",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "d257f3d4-e6a3-4979-9dae-484ab5908ad7",
+      "timestamp": "2025-06-08T12:55:57.086373",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0009",
+        "threat_type": "phishing",
+        "assessed_severity": "medium",
+        "confidence": 0.46,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 15
+      },
+      "defense_info": {
+        "policy_applied": "medium",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "c449e138-9f04-41cf-8b55-99e8565893c8",
+      "timestamp": "2025-06-08T12:55:57.109646",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0010",
+        "threat_type": "phishing",
+        "assessed_severity": "low",
+        "confidence": 0.47,
+        "actions_taken": [
+          "log_event"
+        ],
+        "response_time": 30
+      },
+      "defense_info": {
+        "policy_applied": "low",
+        "total_actions": 1,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "6c6431db-4f67-4227-93dc-0893141ba2ef",
+      "timestamp": "2025-06-08T12:55:58.109584",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0011",
+        "threat_type": "malware",
+        "assessed_severity": "low",
+        "confidence": 0.29,
+        "actions_taken": [
+          "log_event"
+        ],
+        "response_time": 30
+      },
+      "defense_info": {
+        "policy_applied": "low",
+        "total_actions": 1,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "187ab9e7-007c-47c3-88a9-82b5d347eaa0",
+      "timestamp": "2025-06-08T12:56:00.318138",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0012",
+        "threat_type": "ddos",
+        "assessed_severity": "medium",
+        "confidence": 0.37,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 15
+      },
+      "defense_info": {
+        "policy_applied": "medium",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "fbaeca4c-a8f1-42fa-b104-97079c877b00",
+      "timestamp": "2025-06-08T12:56:00.958335",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0013",
+        "threat_type": "brute_force",
+        "assessed_severity": "low",
+        "confidence": 0.4,
+        "actions_taken": [
+          "log_event"
+        ],
+        "response_time": 30
+      },
+      "defense_info": {
+        "policy_applied": "low",
+        "total_actions": 1,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "005f852a-ddee-49e2-a52b-47c805b7f543",
+      "timestamp": "2025-06-08T12:56:01.251875",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0014",
+        "threat_type": "ddos",
+        "assessed_severity": "critical",
+        "confidence": 0.37,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "response_time": 1
+      },
+      "defense_info": {
+        "policy_applied": "critical",
+        "total_actions": 5,
+        "system_threat_level": "high"
+      },
+      "system_state_snapshot": {
+        "threat_level": "high",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "31715a1d-afb2-41a2-a4d3-0b4d309f9f32",
+      "timestamp": "2025-06-08T12:56:01.769539",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0015",
+        "threat_type": "phishing",
+        "assessed_severity": "low",
+        "confidence": 0.56,
+        "actions_taken": [
+          "log_event"
+        ],
+        "response_time": 30
+      },
+      "defense_info": {
+        "policy_applied": "low",
+        "total_actions": 1,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "776b44fa-bf61-4f6a-a261-959e6d69a076",
+      "timestamp": "2025-06-08T12:56:02.432904",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0016",
+        "threat_type": "malware",
+        "assessed_severity": "medium",
+        "confidence": 0.51,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 15
+      },
+      "defense_info": {
+        "policy_applied": "medium",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "9e24a9bd-1e6a-4fcd-8b02-7bd913c09933",
+      "timestamp": "2025-06-08T12:56:02.713999",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0017",
+        "threat_type": "phishing",
+        "assessed_severity": "high",
+        "confidence": 0.44,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 5
+      },
+      "defense_info": {
+        "policy_applied": "high",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "3ccd1bbf-cc79-406b-9762-9a7b55765328",
+      "timestamp": "2025-06-08T12:56:07.867617",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0018",
+        "threat_type": "brute_force",
+        "assessed_severity": "critical",
+        "confidence": 0.39,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "response_time": 1
+      },
+      "defense_info": {
+        "policy_applied": "critical",
+        "total_actions": 5,
+        "system_threat_level": "high"
+      },
+      "system_state_snapshot": {
+        "threat_level": "high",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "c586cf10-0d7b-4076-8dc8-9e52a4abbb23",
+      "timestamp": "2025-06-08T12:56:08.291181",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0019",
+        "threat_type": "ddos",
+        "assessed_severity": "medium",
+        "confidence": 0.44,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 15
+      },
+      "defense_info": {
+        "policy_applied": "medium",
+        "total_actions": 3,
+        "system_threat_level": "high"
+      },
+      "system_state_snapshot": {
+        "threat_level": "high",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "9f15b76f-c87c-4405-b181-3281df7262eb",
+      "timestamp": "2025-06-08T12:56:13.683729",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0020",
+        "threat_type": "phishing",
+        "assessed_severity": "medium",
+        "confidence": 0.46,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 15
+      },
+      "defense_info": {
+        "policy_applied": "medium",
+        "total_actions": 3,
+        "system_threat_level": "high"
+      },
+      "system_state_snapshot": {
+        "threat_level": "high",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "31131446-8361-4bd6-8c46-203a6ad58fc6",
+      "timestamp": "2025-06-08T12:56:14.353198",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0021",
+        "threat_type": "brute_force",
+        "assessed_severity": "low",
+        "confidence": 0.42,
+        "actions_taken": [
+          "log_event"
+        ],
+        "response_time": 30
+      },
+      "defense_info": {
+        "policy_applied": "low",
+        "total_actions": 1,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "3588aae0-ac50-4295-884f-c8a1a0447a07",
+      "timestamp": "2025-06-08T12:56:14.935044",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0022",
+        "threat_type": "ddos",
+        "assessed_severity": "medium",
+        "confidence": 0.51,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 15
+      },
+      "defense_info": {
+        "policy_applied": "medium",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "01137568-9c79-4229-be2e-f7d31b10d53c",
+      "timestamp": "2025-06-08T12:56:15.251607",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0023",
+        "threat_type": "malware",
+        "assessed_severity": "high",
+        "confidence": 0.45,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 5
+      },
+      "defense_info": {
+        "policy_applied": "high",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "82a76a1b-37e3-4717-8b1f-5c8f085c374d",
+      "timestamp": "2025-06-08T12:56:16.538892",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0024",
+        "threat_type": "brute_force",
+        "assessed_severity": "high",
+        "confidence": 0.36,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 5
+      },
+      "defense_info": {
+        "policy_applied": "high",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "b0b33e81-e703-4921-9e35-6bc14ba27b67",
+      "timestamp": "2025-06-08T12:56:21.070567",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0025",
+        "threat_type": "ddos",
+        "assessed_severity": "high",
+        "confidence": 0.39,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 5
+      },
+      "defense_info": {
+        "policy_applied": "high",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "0f17fa84-8330-436d-9302-a64f67d6c4b6",
+      "timestamp": "2025-06-08T12:56:25.152749",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0026",
+        "threat_type": "brute_force",
+        "assessed_severity": "low",
+        "confidence": 0.37,
+        "actions_taken": [
+          "log_event"
+        ],
+        "response_time": 30
+      },
+      "defense_info": {
+        "policy_applied": "low",
+        "total_actions": 1,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "2d51c235-ae76-4576-89d0-8a96797bf455",
+      "timestamp": "2025-06-08T12:56:25.266978",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0027",
+        "threat_type": "data_exfiltration",
+        "assessed_severity": "low",
+        "confidence": 0.42,
+        "actions_taken": [
+          "log_event"
+        ],
+        "response_time": 30
+      },
+      "defense_info": {
+        "policy_applied": "low",
+        "total_actions": 1,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "4904c7c8-9846-4c5a-8f1e-98868d5217ae",
+      "timestamp": "2025-06-08T12:56:28.136579",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0028",
+        "threat_type": "data_exfiltration",
+        "assessed_severity": "high",
+        "confidence": 0.44,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 5
+      },
+      "defense_info": {
+        "policy_applied": "high",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "ede368e6-f647-41c6-85f8-a8f8b7640fa8",
+      "timestamp": "2025-06-08T12:56:32.456715",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0029",
+        "threat_type": "brute_force",
+        "assessed_severity": "medium",
+        "confidence": 0.53,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 15
+      },
+      "defense_info": {
+        "policy_applied": "medium",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "017888f0-9494-49d4-979c-176085477779",
+      "timestamp": "2025-06-08T12:56:35.153098",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0030",
+        "threat_type": "brute_force",
+        "assessed_severity": "high",
+        "confidence": 0.37,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 5
+      },
+      "defense_info": {
+        "policy_applied": "high",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "602a1e2f-6896-4da4-8f0d-03e59d927c9c",
+      "timestamp": "2025-06-08T12:56:35.389578",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0031",
+        "threat_type": "malware",
+        "assessed_severity": "low",
+        "confidence": 0.4,
+        "actions_taken": [
+          "log_event"
+        ],
+        "response_time": 30
+      },
+      "defense_info": {
+        "policy_applied": "low",
+        "total_actions": 1,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "7b9c5645-5b15-441a-b697-e8f57b6a867b",
+      "timestamp": "2025-06-08T12:56:36.492911",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0032",
+        "threat_type": "ddos",
+        "assessed_severity": "medium",
+        "confidence": 0.45,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 15
+      },
+      "defense_info": {
+        "policy_applied": "medium",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "38bd51fd-18ab-4e7f-8480-7abb755e309e",
+      "timestamp": "2025-06-08T12:56:39.801129",
+      "event_type": "defense_actions_executed",
+      "details": {
+        "threat_id": "T0033",
+        "threat_type": "ddos",
+        "assessed_severity": "medium",
+        "confidence": 0.38,
+        "actions_taken": [
+          "log_event",
+          "rate_limit",
+          "enhanced_monitoring"
+        ],
+        "response_time": 15
+      },
+      "defense_info": {
+        "policy_applied": "medium",
+        "total_actions": 3,
+        "system_threat_level": "medium"
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "1d04922d-1d3c-4f74-8a6a-d435305e7938",
+      "timestamp": "2025-06-08T12:56:42.802052",
+      "event_type": "defense_effectiveness_analysis",
+      "details": {
+        "total_defense_actions": 33,
+        "severity_distribution": {
+          "low": 12,
+          "medium": 12,
+          "high": 7,
+          "critical": 2
+        },
+        "action_effectiveness": {
+          "log_event": {
+            "count": 33,
+            "avg_confidence": 0.4172727272727272
+          },
+          "rate_limit": {
+            "count": 21,
+            "avg_confidence": 0.4276190476190476
+          },
+          "enhanced_monitoring": {
+            "count": 21,
+            "avg_confidence": 0.4276190476190476
+          },
+          "network_isolation": {
+            "count": 2,
+            "avg_confidence": 0.38
+          },
+          "emergency_response": {
+            "count": 2,
+            "avg_confidence": 0.38
+          }
+        },
+        "blocked_ips_count": 0,
+        "active_defenses": 3,
+        "current_threat_level": "medium"
+      },
+      "defense_info": {
+        "analysis_type": "post_processing",
+        "metrics_calculated": [
+          "total_defense_actions",
+          "severity_distribution",
+          "action_effectiveness",
+          "blocked_ips_count",
+          "active_defenses",
+          "current_threat_level"
+        ]
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "cb1617cc-f1a5-4b6d-9298-c434a39d066e",
+      "timestamp": "2025-06-08T12:57:38.137144",
+      "event_type": "defense_effectiveness_analysis",
+      "details": {
+        "total_defense_actions": 33,
+        "severity_distribution": {
+          "low": 12,
+          "medium": 12,
+          "high": 7,
+          "critical": 2
+        },
+        "action_effectiveness": {
+          "log_event": {
+            "count": 33,
+            "avg_confidence": 0.4172727272727272
+          },
+          "rate_limit": {
+            "count": 21,
+            "avg_confidence": 0.4276190476190476
+          },
+          "enhanced_monitoring": {
+            "count": 21,
+            "avg_confidence": 0.4276190476190476
+          },
+          "network_isolation": {
+            "count": 2,
+            "avg_confidence": 0.38
+          },
+          "emergency_response": {
+            "count": 2,
+            "avg_confidence": 0.38
+          }
+        },
+        "blocked_ips_count": 0,
+        "active_defenses": 3,
+        "current_threat_level": "medium"
+      },
+      "defense_info": {
+        "analysis_type": "post_processing",
+        "metrics_calculated": [
+          "total_defense_actions",
+          "severity_distribution",
+          "action_effectiveness",
+          "blocked_ips_count",
+          "active_defenses",
+          "current_threat_level"
+        ]
+      },
+      "system_state_snapshot": {
+        "threat_level": "medium",
+        "active_defenses": [
+          "enhanced_monitoring",
+          "network_isolation",
+          "emergency_response"
+        ],
+        "blocked_ips": "set()",
+        "quarantined_files": "set()",
+        "network_restrictions": {
+          "192.168.22.31": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:47.988561"
+          },
+          "192.168.202.168": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:48.137444"
+          },
+          "192.168.253.95": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:53.895615"
+          },
+          "192.168.190.108": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:56.096390"
+          },
+          "192.168.31.198": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:55:57.086320"
+          },
+          "192.168.219.190": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:00.318085"
+          },
+          "192.168.227.7": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:01.251814"
+          },
+          "192.168.191.174": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.432840"
+          },
+          "192.168.31.61": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:02.713940"
+          },
+          "192.168.136.162": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:07.867544"
+          },
+          "192.168.252.188": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:08.291121"
+          },
+          "192.168.220.140": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:13.683668"
+          },
+          "192.168.125.109": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:14.934975"
+          },
+          "192.168.109.24": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:15.251544"
+          },
+          "192.168.237.210": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:16.538819"
+          },
+          "192.168.178.29": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:21.070503"
+          },
+          "192.168.185.178": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:28.136514"
+          },
+          "192.168.214.32": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:32.456660"
+          },
+          "192.168.165.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:35.153039"
+          },
+          "192.168.26.113": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:36.492854"
+          },
+          "192.168.183.15": {
+            "rate_limit": true,
+            "max_connections": 10,
+            "timestamp": "2025-06-08T12:56:39.801072"
+          }
+        }
+      }
+    }
+  ],
+  "defense_actions": [
+    {
+      "timestamp": "2025-06-08T12:55:42.812009",
+      "threat_id": "T0001",
+      "severity": "low",
+      "confidence": 0.38,
+      "actions_taken": [
+        "log_event"
+      ],
+      "event_id": "39513796-0e4c-4fde-be76-8e51de3f0059"
+    },
+    {
+      "timestamp": "2025-06-08T12:55:42.891857",
+      "threat_id": "T0002",
+      "severity": "low",
+      "confidence": 0.4,
+      "actions_taken": [
+        "log_event"
+      ],
+      "event_id": "f3bdcc99-76a7-44b1-899b-c8989495da63"
+    },
+    {
+      "timestamp": "2025-06-08T12:55:45.032343",
+      "threat_id": "T0003",
+      "severity": "low",
+      "confidence": 0.38,
+      "actions_taken": [
+        "log_event"
+      ],
+      "event_id": "e6c37d4d-551c-4f37-8e8e-66efb190ccfe"
+    },
+    {
+      "timestamp": "2025-06-08T12:55:46.047248",
+      "threat_id": "T0004",
+      "severity": "low",
+      "confidence": 0.3,
+      "actions_taken": [
+        "log_event"
+      ],
+      "event_id": "e12fb53a-cd9d-43fa-9602-c22fee467eba"
+    },
+    {
+      "timestamp": "2025-06-08T12:55:47.988626",
+      "threat_id": "T0005",
+      "severity": "medium",
+      "confidence": 0.38,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "c58c2c01-2c3f-45e3-b451-7d9e823af475"
+    },
+    {
+      "timestamp": "2025-06-08T12:55:48.137511",
+      "threat_id": "T0006",
+      "severity": "high",
+      "confidence": 0.42,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "fe14b236-9ed7-4416-954a-5ca5ca3f587a"
+    },
+    {
+      "timestamp": "2025-06-08T12:55:53.895678",
+      "threat_id": "T0007",
+      "severity": "medium",
+      "confidence": 0.41,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "e5e9c275-c6cb-4d37-889d-45f54d6033ba"
+    },
+    {
+      "timestamp": "2025-06-08T12:55:56.096451",
+      "threat_id": "T0008",
+      "severity": "medium",
+      "confidence": 0.45,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "0b465e5a-ba2f-4870-8781-fe14346a5680"
+    },
+    {
+      "timestamp": "2025-06-08T12:55:57.086381",
+      "threat_id": "T0009",
+      "severity": "medium",
+      "confidence": 0.46,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "d257f3d4-e6a3-4979-9dae-484ab5908ad7"
+    },
+    {
+      "timestamp": "2025-06-08T12:55:57.109666",
+      "threat_id": "T0010",
+      "severity": "low",
+      "confidence": 0.47,
+      "actions_taken": [
+        "log_event"
+      ],
+      "event_id": "c449e138-9f04-41cf-8b55-99e8565893c8"
+    },
+    {
+      "timestamp": "2025-06-08T12:55:58.109603",
+      "threat_id": "T0011",
+      "severity": "low",
+      "confidence": 0.29,
+      "actions_taken": [
+        "log_event"
+      ],
+      "event_id": "6c6431db-4f67-4227-93dc-0893141ba2ef"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:00.318145",
+      "threat_id": "T0012",
+      "severity": "medium",
+      "confidence": 0.37,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "187ab9e7-007c-47c3-88a9-82b5d347eaa0"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:00.958356",
+      "threat_id": "T0013",
+      "severity": "low",
+      "confidence": 0.4,
+      "actions_taken": [
+        "log_event"
+      ],
+      "event_id": "fbaeca4c-a8f1-42fa-b104-97079c877b00"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:01.251894",
+      "threat_id": "T0014",
+      "severity": "critical",
+      "confidence": 0.37,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring",
+        "network_isolation",
+        "emergency_response"
+      ],
+      "event_id": "005f852a-ddee-49e2-a52b-47c805b7f543"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:01.769565",
+      "threat_id": "T0015",
+      "severity": "low",
+      "confidence": 0.56,
+      "actions_taken": [
+        "log_event"
+      ],
+      "event_id": "31715a1d-afb2-41a2-a4d3-0b4d309f9f32"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:02.432911",
+      "threat_id": "T0016",
+      "severity": "medium",
+      "confidence": 0.51,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "776b44fa-bf61-4f6a-a261-959e6d69a076"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:02.714007",
+      "threat_id": "T0017",
+      "severity": "high",
+      "confidence": 0.44,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "9e24a9bd-1e6a-4fcd-8b02-7bd913c09933"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:07.867624",
+      "threat_id": "T0018",
+      "severity": "critical",
+      "confidence": 0.39,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring",
+        "network_isolation",
+        "emergency_response"
+      ],
+      "event_id": "3ccd1bbf-cc79-406b-9762-9a7b55765328"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:08.291187",
+      "threat_id": "T0019",
+      "severity": "medium",
+      "confidence": 0.44,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "c586cf10-0d7b-4076-8dc8-9e52a4abbb23"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:13.683736",
+      "threat_id": "T0020",
+      "severity": "medium",
+      "confidence": 0.46,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "9f15b76f-c87c-4405-b181-3281df7262eb"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:14.353219",
+      "threat_id": "T0021",
+      "severity": "low",
+      "confidence": 0.42,
+      "actions_taken": [
+        "log_event"
+      ],
+      "event_id": "31131446-8361-4bd6-8c46-203a6ad58fc6"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:14.935052",
+      "threat_id": "T0022",
+      "severity": "medium",
+      "confidence": 0.51,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "3588aae0-ac50-4295-884f-c8a1a0447a07"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:15.251615",
+      "threat_id": "T0023",
+      "severity": "high",
+      "confidence": 0.45,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "01137568-9c79-4229-be2e-f7d31b10d53c"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:16.538900",
+      "threat_id": "T0024",
+      "severity": "high",
+      "confidence": 0.36,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "82a76a1b-37e3-4717-8b1f-5c8f085c374d"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:21.070574",
+      "threat_id": "T0025",
+      "severity": "high",
+      "confidence": 0.39,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "b0b33e81-e703-4921-9e35-6bc14ba27b67"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:25.152770",
+      "threat_id": "T0026",
+      "severity": "low",
+      "confidence": 0.37,
+      "actions_taken": [
+        "log_event"
+      ],
+      "event_id": "0f17fa84-8330-436d-9302-a64f67d6c4b6"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:25.266998",
+      "threat_id": "T0027",
+      "severity": "low",
+      "confidence": 0.42,
+      "actions_taken": [
+        "log_event"
+      ],
+      "event_id": "2d51c235-ae76-4576-89d0-8a96797bf455"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:28.136586",
+      "threat_id": "T0028",
+      "severity": "high",
+      "confidence": 0.44,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "4904c7c8-9846-4c5a-8f1e-98868d5217ae"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:32.456722",
+      "threat_id": "T0029",
+      "severity": "medium",
+      "confidence": 0.53,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "ede368e6-f647-41c6-85f8-a8f8b7640fa8"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:35.153105",
+      "threat_id": "T0030",
+      "severity": "high",
+      "confidence": 0.37,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "017888f0-9494-49d4-979c-176085477779"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:35.389597",
+      "threat_id": "T0031",
+      "severity": "low",
+      "confidence": 0.4,
+      "actions_taken": [
+        "log_event"
+      ],
+      "event_id": "602a1e2f-6896-4da4-8f0d-03e59d927c9c"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:36.492918",
+      "threat_id": "T0032",
+      "severity": "medium",
+      "confidence": 0.45,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "7b9c5645-5b15-441a-b697-e8f57b6a867b"
+    },
+    {
+      "timestamp": "2025-06-08T12:56:39.801136",
+      "threat_id": "T0033",
+      "severity": "medium",
+      "confidence": 0.38,
+      "actions_taken": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "event_id": "38bd51fd-18ab-4e7f-8480-7abb755e309e"
+    }
+  ],
+  "defense_policies": {
+    "low": {
+      "actions": [
+        "log_event"
+      ],
+      "thresholds": {
+        "block_threshold": 0.9,
+        "quarantine_threshold": 0.95
+      },
+      "response_time": 30
+    },
+    "medium": {
+      "actions": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring"
+      ],
+      "thresholds": {
+        "block_threshold": 0.7,
+        "quarantine_threshold": 0.8
+      },
+      "response_time": 15
+    },
+    "high": {
+      "actions": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring",
+        "ip_blocking"
+      ],
+      "thresholds": {
+        "block_threshold": 0.5,
+        "quarantine_threshold": 0.6
+      },
+      "response_time": 5
+    },
+    "critical": {
+      "actions": [
+        "log_event",
+        "rate_limit",
+        "enhanced_monitoring",
+        "ip_blocking",
+        "network_isolation",
+        "emergency_response"
+      ],
+      "thresholds": {
+        "block_threshold": 0.3,
+        "quarantine_threshold": 0.4
+      },
+      "response_time": 1
+    }
+  },
+  "model_info": {
+    "threat_classifier": {
+      "features": [
+        "target_port",
+        "payload_size",
+        "connection_count",
+        "is_encrypted",
+        "geolocation_risk",
+        "reputation_score"
+      ],
+      "classes": [
+        "critical",
+        "high",
+        "low",
+        "medium"
+      ],
+      "model_type": "RandomForestClassifier"
+    }
+  }
+}

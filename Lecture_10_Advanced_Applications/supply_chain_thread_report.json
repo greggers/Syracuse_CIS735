@@ -1,0 +1,194 @@
+{
+  "report_generated": "2025-06-08T12:08:12.556244",
+  "supply_chain_summary": {
+    "total_components": 5,
+    "vulnerable_components": 1,
+    "at_risk_components": 1,
+    "thread_integrity_hash": "d279756ba028d1a4b2032b35f2d10e45083743c1b19915b05a644636e2a03704"
+  },
+  "sbom": {
+    "sbom_version": "1.0",
+    "generated": "2025-06-08T12:08:12.556440",
+    "components": [
+      {
+        "name": "ubuntu",
+        "version": "20.04",
+        "source": "canonical_registry",
+        "hash": "d9ed447f601a4284",
+        "dependencies": [],
+        "security_status": {
+          "status": "clean",
+          "vulnerabilities": 0,
+          "last_scan": "2025-06-08T12:08:02.487566"
+        }
+      },
+      {
+        "name": "python",
+        "version": "3.9.7",
+        "source": "python_foundation",
+        "hash": "5727df12a2442341",
+        "dependencies": [
+          "ubuntu:20.04"
+        ],
+        "security_status": {
+          "status": "clean",
+          "vulnerabilities": 0,
+          "last_scan": "2025-06-08T12:08:02.487596"
+        }
+      },
+      {
+        "name": "scikit-learn",
+        "version": "1.0.2",
+        "source": "pypi",
+        "hash": "b140a27ef71e5c98",
+        "dependencies": [
+          "python:3.9.7"
+        ],
+        "security_status": {
+          "status": "clean",
+          "vulnerabilities": 0,
+          "last_scan": "2025-06-08T12:08:02.487614"
+        }
+      },
+      {
+        "name": "requests",
+        "version": "2.25.1",
+        "source": "pypi",
+        "hash": "e24be74542a132e6",
+        "dependencies": [
+          "python:3.9.7"
+        ],
+        "security_status": {
+          "status": "vulnerable",
+          "vulnerabilities": 1,
+          "cve_ids": [
+            "CVE-2023-32681"
+          ],
+          "severity": "medium",
+          "last_scan": "2025-06-08T12:08:02.487635"
+        }
+      },
+      {
+        "name": "malware_detector_app",
+        "version": "1.0.0",
+        "source": "internal_build",
+        "hash": "f64c5b6bd020a2a3",
+        "dependencies": [
+          "scikit-learn:1.0.2",
+          "requests:2.25.1"
+        ],
+        "security_status": {
+          "status": "at_risk",
+          "vulnerabilities": 1,
+          "inherited_vulnerabilities": [
+            "CVE-2023-32681"
+          ],
+          "last_scan": "2025-06-08T12:08:02.487656"
+        }
+      }
+    ],
+    "vulnerabilities": [
+      {
+        "timestamp": "2025-06-08T13:08:02.487668",
+        "event_type": "vulnerability_discovered",
+        "cve_id": "CVE-2023-32681",
+        "affected_component": "requests:2.25.1",
+        "severity": "medium",
+        "description": "Potential security vulnerability in requests library",
+        "impact_assessment": {
+          "directly_affected": [
+            "requests:2.25.1"
+          ],
+          "downstream_affected": [
+            "malware_detector_app:1.0.0"
+          ],
+          "risk_level": "high"
+        }
+      }
+    ],
+    "digital_thread_hash": "d279756ba028d1a4b2032b35f2d10e45083743c1b19915b05a644636e2a03704"
+  },
+  "complete_thread": [
+    {
+      "timestamp": "2025-06-08T12:08:02.487583",
+      "event_type": "component_added",
+      "component": "ubuntu",
+      "version": "20.04",
+      "source": "canonical_registry",
+      "hash": "d9ed447f601a4284",
+      "security_status": "clean"
+    },
+    {
+      "timestamp": "2025-06-08T12:09:02.487600",
+      "event_type": "component_added",
+      "component": "python",
+      "version": "3.9.7",
+      "source": "python_foundation",
+      "hash": "5727df12a2442341",
+      "security_status": "clean"
+    },
+    {
+      "timestamp": "2025-06-08T12:10:02.487617",
+      "event_type": "component_added",
+      "component": "scikit-learn",
+      "version": "1.0.2",
+      "source": "pypi",
+      "hash": "b140a27ef71e5c98",
+      "security_status": "clean"
+    },
+    {
+      "timestamp": "2025-06-08T12:11:02.487646",
+      "event_type": "component_added",
+      "component": "requests",
+      "version": "2.25.1",
+      "source": "pypi",
+      "hash": "e24be74542a132e6",
+      "security_status": "vulnerable"
+    },
+    {
+      "timestamp": "2025-06-08T12:12:02.487660",
+      "event_type": "component_added",
+      "component": "malware_detector_app",
+      "version": "1.0.0",
+      "source": "internal_build",
+      "hash": "f64c5b6bd020a2a3",
+      "security_status": "at_risk"
+    },
+    {
+      "timestamp": "2025-06-08T13:08:02.487668",
+      "event_type": "vulnerability_discovered",
+      "cve_id": "CVE-2023-32681",
+      "affected_component": "requests:2.25.1",
+      "severity": "medium",
+      "description": "Potential security vulnerability in requests library",
+      "impact_assessment": {
+        "directly_affected": [
+          "requests:2.25.1"
+        ],
+        "downstream_affected": [
+          "malware_detector_app:1.0.0"
+        ],
+        "risk_level": "high"
+      }
+    }
+  ],
+  "vulnerability_alerts": [
+    {
+      "timestamp": "2025-06-08T13:08:02.487668",
+      "event_type": "vulnerability_discovered",
+      "cve_id": "CVE-2023-32681",
+      "affected_component": "requests:2.25.1",
+      "severity": "medium",
+      "description": "Potential security vulnerability in requests library",
+      "impact_assessment": {
+        "directly_affected": [
+          "requests:2.25.1"
+        ],
+        "downstream_affected": [
+          "malware_detector_app:1.0.0"
+        ],
+        "risk_level": "high"
+      }
+    }
+  ]
+}

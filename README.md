@@ -120,6 +120,53 @@ After taking this course, students will be able to:
   - Spam filtering and social engineering detection
 - Ethical considerations and defensive applications
 
+### [Lecture 10: Advanced ML Applications in Cybersecurity](./Lecture_10_Advanced_Applications)
+- Real-world machine learning implementations for cybersecurity
+- Advanced threat detection systems:
+  - Multi-stage attack detection using ensemble methods
+  - Behavioral analytics for insider threat detection
+  - Zero-day exploit detection using anomaly detection
+  - Advanced Persistent Threat (APT) identification
+- Graph Neural Networks (GNNs) for cybersecurity:
+  - Network topology analysis and anomaly detection
+  - Graph-based malware detection and classification
+  - Social network analysis for threat intelligence
+  - Enterprise network security monitoring with GNNs
+  - Node-level and graph-level anomaly detection
+  - Graph Attention Networks (GAT) for cybersecurity applications
+- Time-series analysis for security:
+  - Network traffic anomaly detection
+  - Log analysis and event correlation
+  - Predictive security analytics
+- Natural Language Processing (NLP) in cybersecurity:
+  - Threat intelligence extraction from unstructured data
+  - Phishing email detection and classification
+  - Malware analysis through code similarity
+  - Social engineering attack detection
+- Computer vision applications:
+  - CAPTCHA solving and security implications
+  - Visual malware analysis and classification
+  - Biometric security systems
+- Federated learning for distributed security:
+  - Privacy-preserving threat detection
+  - Collaborative security without data sharing
+  - Distributed intrusion detection systems
+- Adversarial machine learning:
+  - Attacks against ML-based security systems
+  - Adversarial examples in cybersecurity contexts
+  - Robust ML model development
+  - Defense mechanisms against adversarial attacks
+- Case studies and practical implementations:
+  - Enterprise security monitoring systems
+  - Cloud security analytics platforms
+  - IoT device security using ML
+  - Mobile security and malware detection
+- Digital thread tracking and security analytics:
+  - End-to-end security monitoring
+  - Attack path reconstruction
+  - Incident response automation
+  - Security metrics and KPI development
+
 ## Course Schedule
 
 | Week | Topic |
@@ -133,7 +180,7 @@ After taking this course, students will be able to:
 | Week 7 | Missing Data Handling |
 | Week 8 | Model Selection and Evaluation |
 | Week 9 | Camouflage, Concealment and Deception Methods |
-| Week 10 | Case Studies and Advanced Applications |
+| Week 10 | Advanced ML Applications and Case Studies |
 
 ## Getting Started
 
@@ -146,7 +193,7 @@ git clone https://github.com/greggers/Syracuse_CIS735.git
 
 2. Install the required dependencies:
 ```bash
-pip install numpy scipy matplotlib scikit-learn torch torchvision pandas seaborn pillow
+pip install numpy scipy matplotlib scikit-learn torch torchvision pandas seaborn pillow torch-geometric networkx
 ```
 
 3. Navigate to specific lecture directories to run examples.
@@ -168,6 +215,17 @@ Syracuse_CIS735/
 │   ├── honey_pot.py
 │   ├── spam_filter_bagging.py
 │   └── sample_images/
+├── Lecture_10_Advanced_Applications/
+│   ├── advanced_threat_detection.py
+│   ├── behavioral_analytics.py
+│   ├── time_series_security.py
+│   ├── nlp_security_applications.py
+│   ├── federated_security_learning.py
+│   ├── adversarial_ml_security.py
+│   ├── gnn_node_detection_demo.py
+│   ├── enterprise_security_monitoring.py
+│   ├── attack_path_reconstruction.py
+│   └── security_analytics_dashboard.py
 └── requirements.txt
 ```
 
@@ -177,7 +235,32 @@ Syracuse_CIS735/
 - **Interactive Demonstrations**: Hands-on code examples with visualizations
 - **Security Focus**: All examples tailored to cybersecurity contexts
 - **Modern Techniques**: Coverage of both classical and deep learning approaches
+- **Graph Neural Networks**: Advanced GNN implementations for network security analysis
+- **Digital Thread Tracking**: Comprehensive security event monitoring and analysis
+- **Adversarial ML**: Understanding and defending against attacks on ML systems
 - **Ethical Considerations**: Discussion of responsible AI in security applications
+
+## Advanced Applications Highlights
+
+### Graph Neural Networks for Cybersecurity
+The course includes comprehensive coverage of Graph Neural Networks (GNNs) applied to cybersecurity challenges:
+
+- **Network Topology Analysis**: Using GNNs to understand and monitor enterprise network structures
+- **Node-Level Anomaly Detection**: Identifying compromised devices and suspicious network entities
+- **Graph-Level Classification**: Detecting malicious network patterns and attack signatures
+- **Graph Attention Networks**: Advanced attention mechanisms for focusing on critical network components
+- **Real-time Security Monitoring**: Scalable GNN implementations for live network analysis
+- **Digital Thread Integration**: Tracking security events across graph-structured data
+
+### Practical Security Applications
+Students will work with realistic cybersecurity scenarios including:
+
+- **Enterprise Network Security**: Multi-layered defense systems using ensemble ML methods
+- **Insider Threat Detection**: Behavioral analytics and anomaly detection for internal threats
+- **APT Detection**: Advanced persistent threat identification using time-series analysis
+- **Threat Intelligence**: NLP-based extraction and analysis of security intelligence
+- **IoT Security**: Specialized ML approaches for Internet of Things device protection
+- **Cloud Security Analytics**: Scalable ML solutions for cloud-based security monitoring
 
 ## Contributing
 
@@ -189,6 +272,7 @@ Students and the public are encouraged to contribute to this repository by submi
 - Fundamental knowledge of statistics and linear algebra
 - Introduction to cybersecurity concepts
 - Familiarity with machine learning basics (recommended)
+- Understanding of network concepts and graph theory (for advanced topics)
 
 ## Contact
 
